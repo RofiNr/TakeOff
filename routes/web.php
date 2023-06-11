@@ -51,7 +51,5 @@ Route::post('password', [UserController::class, 'password_action'])->name('passw
 Route::get('logout', [UserController::class, 'logout'])->name('logout');
 
 
-//CONTACTS
-Route::get('/', function () {
-    return view('entry_konsumen');
-});
+//LOGIN
+Route::get('/', [LoginController::class, 'index'])->name('login');
